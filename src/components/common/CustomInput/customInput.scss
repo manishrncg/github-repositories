@@ -1,0 +1,17 @@
+@import "../global.scss";
+
+.custom-input {
+  background-color: $color-white-1;
+  border: 1px solid $color-grey-1;
+  font-size: 14px;
+  padding: 5px 12px;
+  border: 1px solid $color-grey-3;
+  border-radius: 6px;
+  line-height: 20px;
+  flex: auto;
+  &:focus {
+    border-color: #0366d6;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.3);
+  }
+}

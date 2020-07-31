@@ -1,0 +1,75 @@
+@import "./global.scss";
+
+.d-flex {
+  display: flex;
+  &.flex-column {
+    flex-flow: column;
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .flex-auto {
+    flex: auto;
+  }
+}
+
+.justify-bw {
+  justify-content: space-between;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.default-page-width {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.pad-section-default {
+  padding: 0 16px;
+}
+
+.pad-top-section {
+  padding-top: 16px;
+}
+
+.pad-bottom-section {
+  padding-bottom: 16px;
+}
+
+.pad-section-top-secondary {
+  padding-top: 8px;
+}
+
+.pad-section-bottom-secondary {
+  padding-bottom: 8px;
+}
+
+.margin-right-divider {
+  margin-right: 16px;
+}
+
+.margin-top-default {
+  margin-top: 16px;
+}
+
+.margin-bottom-default {
+  margin-bottom: 16px;
+}
+
+.border-bottom-primary {
+  border-bottom: 1px solid $color-grey-1;
+}
+
+@media screen and (max-width: 768px){
+  .flex-column-mobile{
+    flex-flow: column;
+  }
+}

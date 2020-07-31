@@ -1,0 +1,54 @@
+@import "../common/global.scss";
+
+.nav-container {
+  background-color: $color-white-1;
+  padding-top: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  nav {
+    .profile-details-small {
+      width: 25%;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+      .profile-pic {
+        max-width: 32px;
+        border-radius: 50%;
+        padding: 5px;
+      }
+      .user-id {
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .follow-me {
+        padding: 0 5px;
+        font-size: 12px;
+      }
+    }
+    .nav-btns {
+      width: 75%;
+      .profile-page {
+        svg {
+          fill: $color-grey-2;
+          margin-right: 7px;
+        }
+        .repo-count {
+          margin-left: 7px;
+          background-color: $color-grey-1;
+          padding: 2px 7px;
+          border-radius: 500px;
+          font-size: 12px;
+        }
+        &.selected {
+          svg {
+            fill: $color-black-1;
+          }
+          .repo-count {
+            font-weight: initial;
+          }
+        }
+      }
+    }
+  }
+}

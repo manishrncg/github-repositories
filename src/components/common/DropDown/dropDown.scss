@@ -1,0 +1,37 @@
+@import "../global.scss";
+
+.drop-down-container {
+  //   .drop-down-btn {
+  position: relative;
+  .drop-down-list {
+    position: absolute;
+    background-color: $color-white-1;
+    padding: 0;
+    list-style: none;
+    width: 300px;
+    font-size: 12px;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    left: 0;
+    .head {
+      padding: 7px 7px 7px 16px;
+      margin: 0;
+      line-height: 18px;
+      font-weight: bold;
+    }
+    li {
+      padding: 7px 7px 7px 16px;
+      line-height: 18px;
+      color: $color-grey-6;
+      cursor: pointer;
+      .check-icon {
+        margin-right: 8px;
+        visibility: hidden;
+        &.selected{
+            visibility: visible;
+        }
+      }
+    }
+  }
+  //   }
+}

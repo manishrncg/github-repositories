@@ -1,0 +1,177 @@
+@import "../common/global.scss";
+
+.profile-page-container {
+  margin-bottom: 20px;
+  .default-page-width {
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
+  }
+  .profile-details {
+    width: 25%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin: 20px 0 0 0;
+      box-sizing: border-box;
+    }
+    .profile-pic-container {
+      @media screen and (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+      }
+      .pic-container {
+        top: -40px;
+        z-index: 1;
+        display: block;
+        position: relative;
+        @media screen and (max-width: 768px) {
+          display: block;
+          position: static;
+          width: 15%;
+          margin-right: 20px;
+        }
+        .profile-pic {
+          border-radius: 100%;
+        }
+      }
+      .name-container {
+        margin: 0;
+        .user-name {
+          display: block;
+          font-size: 26px;
+        }
+        .user-id {
+          display: block;
+          font-size: 20px;
+          color: $color-grey-8;
+          font-weight: 100;
+        }
+      }
+    }
+    .user-bio {
+      font-size: 16px;
+      margin-bottom: 16px;
+      margin-bottom: 16px;
+    }
+    .follow-container {
+      .follow-me {
+        margin-right: 10px;
+      }
+      .report {
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+    .profile-links {
+      .h-link {
+        text-decoration: none;
+        color: $color-grey-5;
+        font-size: 14px;
+      }
+      .people-icon {
+        fill: $color-grey-7;
+      }
+      .dark-grey {
+        color: $color-grey-6;
+        font-weight: 600;
+      }
+    }
+    .details-card {
+      color: $color-grey-6;
+      fill: $color-grey-7;
+      font-size: 14px;
+      .detail {
+        margin-top: 6px;
+        &:first-child {
+          margin-top: 0;
+        }
+        svg {
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+  .repositories-section {
+    width: 75%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .filter-section {
+      .filter-dropdown {
+        @media screen and (max-width: 768px) {
+          margin-top: 16px;
+        }
+      }
+      .caret-small {
+        width: 7px;
+        color: #4f5457;
+      }
+    }
+    .repositories-list {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+      .search-message {
+        font-size: 14px;
+      }
+      .repository {
+        padding: 24px 0;
+        .repo-name {
+          a {
+            color: $color-blue-1;
+            font-weight: 600;
+            font-size: 20px;
+            text-decoration: none;
+          }
+          .star-repo {
+            color: $color-grey-6;
+            svg {
+              color: $color-grey-7;
+              margin-right: 4px;
+            }
+          }
+        }
+        .forked {
+          font-size: 12px;
+          color: $color-grey-5;
+          margin-bottom: 4px;
+          a {
+            color: inherit;
+            text-decoration: none;
+            &:hover {
+              color: #0366d6;
+            }
+          }
+        }
+        .description {
+          font-size: 14px;
+          color: $color-grey-5;
+          margin-bottom: 16px;
+        }
+        .repo-details {
+          font-size: 12px;
+          margin-top: 12px;
+          color: $color-grey-5;
+          .circle {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            margin-right: 3px;
+            &.orange {
+              background-color: #e34c26;
+            }
+            &.purple {
+              background-color: #563d7c;
+            }
+            &.yellow {
+              background-color: #f1e05a;
+            }
+          }
+        }
+      }
+    }
+  }
+}

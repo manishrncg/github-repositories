@@ -1,0 +1,37 @@
+@import "../global.scss";
+
+.custom-btn {
+  padding: 5px 16px;
+  font-size: 14px;
+  background-color: $color-grey-4;
+  border: 1px solid $color-grey-1;
+  border-radius: 6px;
+  line-height: 20px;
+  cursor: pointer;
+  &:hover{
+    background-color: #f3f4f6;
+    transition-duration: .1s;
+  }
+  &:focus{
+    outline: 0;
+  }
+  &.profile-page {
+    color: #1b1f23;
+    border: none;
+    cursor: pointer;
+    background: none;
+    text-align: center;
+    padding: 16px;
+    border-radius: initial;
+    line-height: initial;
+    &:hover {
+      border-bottom: 2px solid $color-grey-1;
+      background-color: initial;
+      transition-duration: unset;
+    }
+    &.selected {
+      border-bottom: 2px solid #f9826c;
+      font-weight: 700;
+    }
+  }
+}
